@@ -62,7 +62,6 @@ class LoginViewController: UIViewController {
         
         LoginBtn.title = "Login";
         LoginBtn.titleColor = Color.white;
-        LoginBtn.tintColor = Color.blue;
         
         passwordField.placeholder = "Password"
         

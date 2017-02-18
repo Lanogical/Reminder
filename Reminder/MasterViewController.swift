@@ -9,6 +9,7 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
+    
     @IBOutlet var TopMenu: UINavigationItem!
     
     var detailViewController: DetailViewController? = nil
@@ -70,6 +71,9 @@ class MasterViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        self.title = publicvars.screenTitle;
+        
         let gestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeHandler))
         gestureRecognizer.direction = (.right)
         self.view.addGestureRecognizer(gestureRecognizer)
@@ -97,8 +101,6 @@ class MasterViewController: UITableViewController {
                 self.insertNewObject("self", item: x)
             }
         }
-        
-        self.TopMenu.title = "that"
         // Do any additional setup after loading the view, typically from a nib.
         self.navigationItem.leftBarButtonItem = self.editButtonItem
 

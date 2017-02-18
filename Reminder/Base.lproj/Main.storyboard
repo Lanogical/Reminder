@@ -6,7 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -84,6 +84,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cliff-1851113_1920" translatesAutoresizingMaskIntoConstraints="NO" id="aKe-Qh-XAl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="LTG-g7-M1K">
+                                <rect key="frame" x="96" y="36" width="128" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="DLt-Lt-ji9"/>
+                                    <constraint firstAttribute="width" constant="128" id="IVn-an-VQC"/>
+                                </constraints>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LY-yg-cEH">
                                 <rect key="frame" x="16" y="194" width="288" height="180"/>
                                 <subviews>
@@ -133,37 +140,15 @@
                                     <constraint firstAttribute="trailing" secondItem="jge-hF-Lr4" secondAttribute="trailing" id="vKh-jj-aKb"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wyo-lb-Zla">
-                                <rect key="frame" x="96" y="38" width="128" height="128"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gIB-gl-itM">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Lzf-BR-DiK">
-                                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="LTG-g7-M1K">
-                                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="128" id="DLt-Lt-ji9"/>
-                                                            <constraint firstAttribute="width" constant="128" id="IVn-an-VQC"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0LY-yg-cEH" firstAttribute="top" secondItem="wyo-lb-Zla" secondAttribute="bottom" constant="32" id="1KF-2U-mfi"/>
                             <constraint firstAttribute="trailing" secondItem="0LY-yg-cEH" secondAttribute="trailing" constant="16" id="5LE-4a-c8v"/>
+                            <constraint firstItem="LTG-g7-M1K" firstAttribute="top" secondItem="zYX-cF-6m4" secondAttribute="bottom" constant="16" id="JEj-Zp-oTz"/>
                             <constraint firstAttribute="trailing" secondItem="aKe-Qh-XAl" secondAttribute="trailing" id="LuA-hH-f5Y"/>
-                            <constraint firstItem="wyo-lb-Zla" firstAttribute="centerX" secondItem="G1C-J9-wOQ" secondAttribute="centerX" id="dXX-Ye-nVn"/>
                             <constraint firstItem="0LY-yg-cEH" firstAttribute="centerY" secondItem="G1C-J9-wOQ" secondAttribute="centerY" id="e6B-nj-qmF"/>
                             <constraint firstItem="0LY-yg-cEH" firstAttribute="leading" secondItem="G1C-J9-wOQ" secondAttribute="leading" constant="16" id="gnB-5f-fJq"/>
+                            <constraint firstItem="LTG-g7-M1K" firstAttribute="centerX" secondItem="G1C-J9-wOQ" secondAttribute="centerX" id="i8d-CA-Lv2"/>
                             <constraint firstItem="aKe-Qh-XAl" firstAttribute="top" secondItem="G1C-J9-wOQ" secondAttribute="top" id="kxO-w4-nnj"/>
                             <constraint firstItem="df2-Ai-aE4" firstAttribute="top" secondItem="aKe-Qh-XAl" secondAttribute="bottom" id="tr2-j8-N6h"/>
                             <constraint firstItem="aKe-Qh-XAl" firstAttribute="leading" secondItem="G1C-J9-wOQ" secondAttribute="leading" id="uEB-iI-Wv2"/>
@@ -191,11 +176,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="i1J-jS-mie">
-                                <rect key="frame" x="0.0" y="45" width="304" height="193"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="i1J-jS-mie">
+                                <rect key="frame" x="16" y="52" width="288" height="193"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-oK-mtP" customClass="RaisedButton" customModule="Material">
-                                        <rect key="frame" x="0.0" y="0.0" width="304" height="43"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="43"/>
                                         <color key="backgroundColor" red="0.15686274509803921" green="0.31372549019607843" blue="0.58823529411764708" alpha="0.90439273389999997" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="26"/>
                                         <state key="normal" title="Apps">
@@ -206,7 +191,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9v-Ry-lvS" customClass="RaisedButton" customModule="Material">
-                                        <rect key="frame" x="0.0" y="50" width="304" height="43"/>
+                                        <rect key="frame" x="0.0" y="50" width="288" height="43"/>
                                         <color key="backgroundColor" red="0.15686274509803921" green="0.31372549019607843" blue="0.58823529411764708" alpha="0.90439273389999997" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="26"/>
                                         <state key="normal" title="Resturants">
@@ -217,7 +202,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY7-Xd-VQj" customClass="RaisedButton" customModule="Material">
-                                        <rect key="frame" x="0.0" y="100" width="304" height="43"/>
+                                        <rect key="frame" x="0.0" y="100" width="288" height="43"/>
                                         <color key="backgroundColor" red="0.15686274509803921" green="0.31372549019607843" blue="0.58823529411764708" alpha="0.90439273389999997" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="26"/>
                                         <state key="normal" title="Books">
@@ -228,7 +213,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DsP-5P-a6w" customClass="RaisedButton" customModule="Material">
-                                        <rect key="frame" x="0.0" y="150" width="304" height="43"/>
+                                        <rect key="frame" x="0.0" y="150" width="288" height="43"/>
                                         <color key="backgroundColor" red="0.15686274509803921" green="0.31372549019607843" blue="0.58823529411764708" alpha="0.90439273389999997" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="26"/>
                                         <state key="normal" title="Shopping">
@@ -240,9 +225,8 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52q-cI-2Zl">
-                                <rect key="frame" x="109" y="478" width="86" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52q-cI-2Zl" customClass="FlatButton" customModule="Material">
+                                <rect key="frame" x="32" y="490" width="256" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Logout">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -254,9 +238,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.1843137255" green="0.32549019610000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="i1J-jS-mie" firstAttribute="width" secondItem="s6Q-Nz-7P1" secondAttribute="width" multiplier="0.95" id="Kcy-oI-brb"/>
-                            <constraint firstItem="i1J-jS-mie" firstAttribute="centerY" secondItem="s6Q-Nz-7P1" secondAttribute="centerY" id="O7j-hR-09g"/>
-                            <constraint firstItem="i1J-jS-mie" firstAttribute="centerX" secondItem="s6Q-Nz-7P1" secondAttribute="centerX" id="Pch-Zy-dUY"/>
+                            <constraint firstItem="Pf4-mI-4XX" firstAttribute="top" secondItem="52q-cI-2Zl" secondAttribute="bottom" constant="42" id="F5X-0T-KsK"/>
+                            <constraint firstItem="52q-cI-2Zl" firstAttribute="leading" secondItem="s6Q-Nz-7P1" secondAttribute="leadingMargin" constant="16" id="FQ3-35-f9I"/>
+                            <constraint firstAttribute="trailing" secondItem="i1J-jS-mie" secondAttribute="trailing" constant="16" id="KZK-PU-ONQ"/>
+                            <constraint firstItem="i1J-jS-mie" firstAttribute="top" secondItem="uxe-Tk-Ukl" secondAttribute="bottom" constant="32" id="NkI-8O-dzh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="52q-cI-2Zl" secondAttribute="trailing" constant="16" id="Ny7-WY-pye"/>
+                            <constraint firstItem="i1J-jS-mie" firstAttribute="leading" secondItem="s6Q-Nz-7P1" secondAttribute="leading" constant="16" id="zl3-Y0-MIy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -300,11 +287,11 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WCw-Qf-5nD" id="37f-cq-3Eg">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Arm-wq-HPj">
-                                            <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="290" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -330,7 +317,7 @@
                             <outlet property="delegate" destination="7bK-jq-Zjz" id="RA6-mI-bju"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Apps " id="Zdf-7t-Un8"/>
+                    <navigationItem key="navigationItem" title="[Title]" id="Zdf-7t-Un8"/>
                     <connections>
                         <outlet property="TopMenu" destination="Zdf-7t-Un8" id="7Zz-UK-c42"/>
                     </connections>
