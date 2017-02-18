@@ -105,7 +105,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9j-z4-R06" customClass="HTPressableButton">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9j-z4-R06" customClass="FlatButton" customModule="Material">
                                         <rect key="frame" x="0.0" y="124" width="288" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="56D-bK-hKO"/>

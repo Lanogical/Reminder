@@ -19,11 +19,6 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>HTPressableButton.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Material-io.cosmicmind.material.fonts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -62,11 +57,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>131D7114AFD67BE676276B3D260CCA27</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>24085F438788A072884B3FA2E6E02D7C</key>
 		<dict>
 			<key>primary</key>
@@ -82,6 +72,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>5A5694F62F3C342FB20333C54B882F93</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>681BE6E3D02A43F9BA63777AC435C8FD</key>
 		<dict>
 			<key>primary</key>
@@ -93,11 +88,6 @@
 			<true/>
 		</dict>
 		<key>BA287C1DC287EAA4A399B22703554187</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EABE7FBB16B274F4C713FCDD2B7B9FE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

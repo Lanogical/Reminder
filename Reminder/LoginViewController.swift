@@ -9,14 +9,13 @@
 import UIKit
 import Firebase
 import Material
-import HTPressableButton
 
 class LoginViewController: UIViewController {
 
 
     @IBOutlet var emailField: TextField!
     @IBOutlet var passwordField: ErrorTextField!
-    @IBOutlet var LoginBtn: HTPressableButton!
+    @IBOutlet var LoginBtn: FlatButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,11 +60,9 @@ class LoginViewController: UIViewController {
             self.present(controller,animated: true,completion: nil)
         }
         
-        LoginBtn.buttonColor = Color.lightBlue.base
-        LoginBtn.titleLabel?.text = "Login"
-        LoginBtn.style = .rounded
-        LoginBtn.addTarget(self, action: #selector(LoginClicked(_:)), for: .touchUpInside)
-        LoginBtn.createButton()
+        LoginBtn.title = "Login";
+        LoginBtn.titleColor = Color.white;
+        LoginBtn.tintColor = Color.blue;
         
         passwordField.placeholder = "Password"
         

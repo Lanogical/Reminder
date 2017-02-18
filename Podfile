@@ -7,7 +7,7 @@ target 'Reminder' do
   use_frameworks!
 
   # Pods for Reminder
-  pod 'Firebase/Core', '~> 3.12.0'
+  pod 'Firebase/Core'
   pod 'Material', '~> 2.4'
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
