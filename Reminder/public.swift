@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Firebase
 
 enum ScreenType{
     case App
@@ -27,26 +28,39 @@ class publicvars{
     
     static var apps = [String]()
     
+    static func initalSync(token: String){
+        if(token == "}e}J76BY!6T9#7]WobiWbMuA>43qVIVpF61Nw$4nV`b5`&?^n;3rf1Y%>QE3Mi"){
+            apps = LocalData.apps
+            resturants = LocalData.resturants
+            books = LocalData.books
+            shops = LocalData.shopping
+        }
+    }
+    
     static func addApp(_ app:String){
         apps.append(app)
+        LocalData.apps = self.apps
     }
     
     static var resturants = [String]()
     
     static func addResturant(_ resturant:String){
         resturants.append(resturant)
+        LocalData.resturants = self.resturants
     }
     
     static var books = [String]()
     
     static func addBook(_ book:String){
         books.append(book)
+        LocalData.books = self.books
     }
-    
+
     static var shops = [String]()
     
     static func addShop(_ shop:String){
         shops.append(shop)
+        LocalData.shopping = self.shops
     }
     
     static func setTitle(_ screen: ScreenType){

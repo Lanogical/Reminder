@@ -30,6 +30,12 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        self.title = detailItem
+        
+        if publicvars.current == .Book {
+            
+        }
     
         var gestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeHandler))
         gestureRecognizer.direction = (.right)

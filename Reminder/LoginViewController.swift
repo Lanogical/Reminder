@@ -16,9 +16,11 @@ class LoginViewController: UIViewController {
     @IBOutlet var emailField: TextField!
     @IBOutlet var passwordField: ErrorTextField!
     @IBOutlet var LoginBtn: FlatButton!
+    @IBOutlet var registerButton: FlatButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         if let token = LocalData.token {
             print("tok!=nil")
            FIRAuth.auth()?.signIn(withCustomToken: token, completion: { (user, error) in
@@ -60,7 +62,7 @@ class LoginViewController: UIViewController {
             self.present(controller,animated: true,completion: nil)
         }
         
-        LoginBtn.title = "Login";
+        LoginBtn.title = "Login / Register";
         LoginBtn.titleColor = Color.white;
         
         passwordField.placeholder = "Password"
@@ -70,26 +72,7 @@ class LoginViewController: UIViewController {
         emailField.placeholder = "Email"
     }
     
-    
-    func LoginClicked(_ sender: AnyObject!) {
-        FIRAuth.auth()!.createUser(withEmail: emailField.text!,
-                                   password: passwordField.text!) { user, error in
-                                    if error == nil {
-                                        FIRAuth.auth()!.signIn(withEmail: self.emailField.text!, password: self.passwordField.text!)
-
-                                        let board = UIStoryboard(name: "Main",bundle: nil)
-                                        let controller = board.instantiateViewController(withIdentifier: "init")
-                                        self.present(controller,animated: true,completion: nil)
-                                        
-
-                                    }else{
-                                        if self.passwordField.text!.characters.count < 6{
-                                            self.passwordField.detail = "Minimum lengh: 6"
-                                            self.passwordField.isErrorRevealed = true
-                                        }
-                                    }
-        }
-        
+    @IBAction func loginClicked(_ sender: Any) {
         FIRAuth.auth()!.signIn(withEmail: self.emailField.text!, password: self.passwordField.text!)
         
         if let user = FIRAuth.auth()?.currentUser {

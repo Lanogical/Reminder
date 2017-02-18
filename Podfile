@@ -10,7 +10,7 @@ target 'Reminder' do
   pod 'Firebase/Core'
   pod 'Material', '~> 2.4'
   pod 'Firebase/Auth'
-  pod 'GoogleSignIn'
+  pod 'Firebase/Database'
 
   target 'ReminderTests' do
     inherit! :search_paths

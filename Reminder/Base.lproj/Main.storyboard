@@ -44,25 +44,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Detail view content goes here" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-y9-sOw">
-                                <rect key="frame" x="0.0" y="275" width="320" height="39"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="40"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnt-oS-ycT">
+                                <rect key="frame" x="0.0" y="96" width="320" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="lfq-iR-s4d">
+                                <rect key="frame" x="0.0" y="157" width="320" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="509083604.18152899">
+                                    <!--2017-02-18 04:06:44 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
-                        <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0XM-y9-sOw" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="are-b7-cAd"/>
-                            <constraint firstItem="0XM-y9-sOw" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="dUJ-SK-rg4"/>
-                            <constraint firstItem="0XM-y9-sOw" firstAttribute="width" secondItem="svH-Pt-448" secondAttribute="width" id="nTz-WZ-m1c"/>
+                            <constraint firstItem="Dnt-oS-ycT" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" id="H3b-CI-Lwk"/>
+                            <constraint firstAttribute="trailing" secondItem="Dnt-oS-ycT" secondAttribute="trailing" id="Oau-Tw-Zzi"/>
+                            <constraint firstItem="Dnt-oS-ycT" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="32" id="bXT-PO-VLa"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Detail" id="mOI-FS-AaM"/>
                     <connections>
-                        <outlet property="detailDescriptionLabel" destination="0XM-y9-sOw" id="deQ-Na-JPF"/>
+                        <outlet property="detailDescriptionLabel" destination="Dnt-oS-ycT" id="0zX-Cq-WHc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
@@ -122,7 +128,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="LoginClicked:" destination="ygK-64-h8G" eventType="touchUpInside" id="LTe-xn-0AR"/>
+                                            <action selector="loginClicked:" destination="ygK-64-h8G" eventType="touchUpInside" id="UU2-sI-0bf"/>
                                         </connections>
                                     </button>
                                 </subviews>

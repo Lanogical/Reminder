@@ -18,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
-        
-        
+            
+        publicvars.initalSync(token: "}e}J76BY!6T9#7]WobiWbMuA>43qVIVpF61Nw$4nV`b5`&?^n;3rf1Y%>QE3Mi")
+            
         let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AppController")
         let splitViewController = controller as! UISplitViewController
         let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count-1] as! UINavigationController
