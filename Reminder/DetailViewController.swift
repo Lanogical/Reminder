@@ -12,6 +12,7 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var detailDescriptionLabel: UILabel!
     
+    
     @IBAction func BackClick(_ sender: Any) {
         let board = UIStoryboard(name: "Main",bundle: nil)
         let controller = board.instantiateViewController(withIdentifier: "AppMaster")

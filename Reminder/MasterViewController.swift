@@ -9,9 +9,7 @@
 import UIKit
 
 class MasterViewController: UITableViewController {
-    
-    @IBOutlet var TopMenu: UINavigationItem!
-    
+        
     var detailViewController: DetailViewController? = nil
     
     var objects = [Any]()

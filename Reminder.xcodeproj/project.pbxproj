@@ -14,7 +14,6 @@
 		8658781B1E3581B500F9E318 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658781A1E3581B500F9E318 /* Icons.swift */; };
 		8658781D1E35820200F9E318 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8658781C1E35820200F9E318 /* Colors.swift */; };
 		865BA0F81E39838C00FA9093 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865BA0F71E39838C00FA9093 /* ScannerView.swift */; };
-		866C84921E57EB34000E8B28 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866C84911E57EB34000E8B28 /* RegisterViewController.swift */; };
 		86AB065C1E467800005B5345 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB065B1E467800005B5345 /* LoginViewController.swift */; };
 		86AB065E1E4694EE005B5345 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86AB065D1E4694EE005B5345 /* LocalData.swift */; };
 		86B522C41E356B2E0025EB17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B522C31E356B2E0025EB17 /* AppDelegate.swift */; };
@@ -57,7 +56,6 @@
 		8658781A1E3581B500F9E318 /* Icons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		8658781C1E35820200F9E318 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		865BA0F71E39838C00FA9093 /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
-		866C84911E57EB34000E8B28 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		86AB065A1E4677A3005B5345 /* Reminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Reminder.entitlements; sourceTree = "<group>"; };
 		86AB065B1E467800005B5345 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		86AB065D1E4694EE005B5345 /* LocalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				8638720E1E3D5CA700E01AA3 /* public.swift */,
 				86AB065B1E467800005B5345 /* LoginViewController.swift */,
 				86AB065D1E4694EE005B5345 /* LocalData.swift */,
-				866C84911E57EB34000E8B28 /* RegisterViewController.swift */,
 			);
 			path = Reminder;
 			sourceTree = "<group>";
@@ -488,7 +485,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				86AB065C1E467800005B5345 /* LoginViewController.swift in Sources */,
-				866C84921E57EB34000E8B28 /* RegisterViewController.swift in Sources */,
 				86AB065E1E4694EE005B5345 /* LocalData.swift in Sources */,
 				86B522C81E356B2F0025EB17 /* DetailViewController.swift in Sources */,
 				863872091E3C176200E01AA3 /* MainController.swift in Sources */,
