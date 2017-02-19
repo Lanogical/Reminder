@@ -3,7 +3,7 @@
 //  Reminder
 //
 //  Created by Ben Koska on 1/22/17.
-//  Copyright © 2017 TheTechKids. All rights reserved.
+//  Copyright © 2017 Ben Koska. All rights reserved.
 //
 
 import UIKit
